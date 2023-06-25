@@ -2,26 +2,26 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BaseAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const BaseAppBar(Key? key) : super(key: key);
+  const BaseAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       leading: IconButton(
-        icon: Icon(Icons.notifications),
+        icon: const Icon(Icons.notifications),
         onPressed: () {
           // Handle the notification button tap here.
         },
       ),
       actions: <Widget>[
         IconButton(
-          icon: Icon(Icons.settings),
+          icon: const Icon(Icons.settings),
           onPressed: () {
             // Handle the settings button tap here.
           },
         ),
       ],
-      bottom: TabBar(
+      bottom: const TabBar(
         tabs: [
           Tab(icon: Icon(Icons.directions_car)),
           Tab(icon: Icon(Icons.directions_transit)),
@@ -33,6 +33,5 @@ class BaseAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
-  Size get preferredSize => Size.zero;
+  Size get preferredSize => const Size.fromHeight(50);
 }

@@ -1,9 +1,9 @@
-import 'package:fitty_frontend_app/home_page/tab_page/my_fitty.dart';
+import 'package:fitty_frontend_app/home_page/tab_page/MyFitty.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MyExercisePage extends StatelessWidget {
-  const MyExercisePage({
+class MyExercise extends StatelessWidget {
+  const MyExercise({
     super.key,
   });
 

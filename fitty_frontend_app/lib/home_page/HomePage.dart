@@ -1,10 +1,9 @@
-import 'package:fitty_frontend_app/home_page/base_app_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'tab_page/my_exercise.dart';
-import 'tab_page/my_fitty.dart';
-import 'tab_page/my_management.dart';
+import 'tab_page/MyExercise.dart';
+import 'tab_page/MyFitty.dart';
+import 'tab_page/MyManagement.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -47,7 +46,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: const TabBarView(
         children: [
-          MyExercisePage(),
+          MyExercise(),
           MyManagement(),
           MyFitty(),
         ],

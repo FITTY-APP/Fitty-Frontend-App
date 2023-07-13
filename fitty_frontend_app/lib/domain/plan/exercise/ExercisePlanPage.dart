@@ -1,3 +1,4 @@
+import 'package:fitty_frontend_app/domain/plan/exercise/ExerciseVolumeWidget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -21,9 +22,16 @@ class _ExercisePlanState extends State<ExercisePlan> {
           child: Column(
         // mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          const Column(
+            children: [
+              ExerciseVolumeWidget(),
+              ExerciseVolumeWidget(),
+              ExerciseVolumeWidget(),
+            ],
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(
-              vertical: 10.0,
+              vertical: 20.0,
             ),
             child: SizedBox(
               width: 300,
